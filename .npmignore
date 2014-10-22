@@ -1,0 +1,9 @@
+.*
+*.log
+bower_components/
+coverage/
+example/
+node_modules/
+bower.json
+test.js
+History.md
