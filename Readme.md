@@ -12,6 +12,12 @@ npm:
 ```sh
 $ npm install retext-live
 ```
+
+Component:
+```sh
+$ component install wooorm/retext-live
+```
+
 Bower:
 ```sh
 $ bower install retext-live

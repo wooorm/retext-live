@@ -1,0 +1,19 @@
+{
+  "name": "retext-live",
+  "version": "0.0.1",
+  "description": "Change a node based on a new input",
+  "license": "MIT",
+  "keywords": [
+    "retext",
+    "live"
+  ],
+  "dependencies": {
+    "flitbit/diff": "^0.3.0",
+    "wooorm/nlcst-to-textom": "^0.0.1",
+    "wooorm/retext-visit": "^0.2.0"
+  },
+  "repository": "wooorm/retext-live",
+  "scripts": [
+    "index.js"
+  ]
+}

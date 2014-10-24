@@ -23,6 +23,8 @@
     ".*",
     "*.log",
     "*.md",
+    "build/",
+    "components/",
     "coverage/",
     "example/",
     "node_modules/",
