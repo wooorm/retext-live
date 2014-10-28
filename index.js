@@ -91,7 +91,6 @@ function applyEdit(tree, change) {
 
 function applyNLCST(node, nlcst) {
     var tree,
-        item,
         changes,
         deletions,
         index,
@@ -161,8 +160,8 @@ function applyNLCST(node, nlcst) {
          * Remove all children of `node`.
          */
 
-        while (item = node.head) {
-            item.remove();
+        while (node.head) {
+            node.head.remove();
         }
 
         tree = nlcstToTextOM(node.TextOM, nlcst);
@@ -171,8 +170,8 @@ function applyNLCST(node, nlcst) {
          * Add all children of the new tree.
          */
 
-        while (item = tree.head) {
-            node.append(item);
+        while (tree.head) {
+            node.append(tree.head);
         }
 
         console.log(
