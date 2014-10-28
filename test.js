@@ -33,10 +33,6 @@ describe('retext-live', function () {
         assert(typeof live === 'function');
     });
 
-    it('should have an `attach` method', function () {
-        assert(typeof live.attach === 'function');
-    });
-
     it('should attach an `update` method to `Node`', function () {
         assert(typeof (new TextOM.Node()).update === 'function');
     });

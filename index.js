@@ -257,25 +257,13 @@ function update(value) {
 
 /**
  * Define `live`.
- */
-
-function live() {}
-
-/**
- * Define `attach`.
  *
  * @param {Retext} retext
  */
 
-function attach(retext) {
+function live(retext) {
     retext.TextOM.Node.prototype.update = update;
 }
-
-/**
- * Expose `attach`.
- */
-
-live.attach = attach;
 
 /**
  * Expose `plugin`.
