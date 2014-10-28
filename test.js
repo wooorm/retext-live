@@ -335,8 +335,8 @@ describe('Node#update(nlcst)', function () {
 
             assert.throws(function () {
                 node.update({
-                    'type' : 'SentenceNode',
-                    'children' : []
+                    'type': 'SentenceNode',
+                    'children': []
                 });
             }, /Incorrect NLCST/);
         }
@@ -348,8 +348,8 @@ describe('Node#update(nlcst)', function () {
         node = new TextOM.TextNode('Alfred');
 
         node.update({
-            'type' : 'TextNode',
-            'value' : 'Bertrand'
+            'type': 'TextNode',
+            'value': 'Bertrand'
         });
 
         assert(node.toString() === 'Bertrand');
@@ -363,8 +363,8 @@ describe('Node#update(nlcst)', function () {
         node.data.stem = 'eric';
 
         node.update({
-            'type' : 'WordNode',
-            'children' : []
+            'type': 'WordNode',
+            'children': []
         });
 
         assert(node.data.stem === 'eric');
@@ -376,46 +376,46 @@ describe('Node#update(nlcst)', function () {
         node = new TextOM.SentenceNode();
 
         node.update({
-            'type' : 'SentenceNode',
-            'children' : [
+            'type': 'SentenceNode',
+            'children': [
                 {
-                    'type' : 'WordNode',
-                    'children' : [
+                    'type': 'WordNode',
+                    'children': [
                         {
-                            'type' : 'TextNode',
-                            'value' : 'Some'
+                            'type': 'TextNode',
+                            'value': 'Some'
                         }
                     ]
                 },
                 {
-                    'type' : 'WhiteSpaceNode',
-                    'value' : ' '
+                    'type': 'WhiteSpaceNode',
+                    'value': ' '
                 },
                 {
-                    'type' : 'WordNode',
-                    'children' : [
+                    'type': 'WordNode',
+                    'children': [
                         {
-                            'type' : 'TextNode',
-                            'value' : 'English'
+                            'type': 'TextNode',
+                            'value': 'English'
                         }
                     ]
                 },
                 {
-                    'type' : 'WhiteSpaceNode',
-                    'value' : ' '
+                    'type': 'WhiteSpaceNode',
+                    'value': ' '
                 },
                 {
-                    'type' : 'WordNode',
-                    'children' : [
+                    'type': 'WordNode',
+                    'children': [
                         {
-                            'type' : 'TextNode',
-                            'value' : 'words'
+                            'type': 'TextNode',
+                            'value': 'words'
                         }
                     ]
                 },
                 {
-                    'type' : 'PunctuationNode',
-                    'value' : '.'
+                    'type': 'PunctuationNode',
+                    'value': '.'
                 }
             ]
         });
@@ -426,8 +426,8 @@ describe('Node#update(nlcst)', function () {
     it('should work when removing all text', function (done) {
         retext.parse('Some English words.', function (err, tree) {
             tree.update({
-                'type' : 'RootNode',
-                'children' : []
+                'type': 'RootNode',
+                'children': []
             });
 
             assert(tree.toString() === '');
