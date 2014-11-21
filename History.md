@@ -1,4 +1,14 @@
 
+n.n.n / 2014-11-21
+==================
+
+ * Refactor `Readme.md`
+ * Add flat badges to `Readme.md`
+ * Refactor `example/index.js` for changes in retext
+ * Refactor npm script targets in `package.json`
+ * Fix incorrect executive rights on `test.js`, `example/index.js`
+ * Update retext, nlcst-to-textom, retext-emoji
+
 0.0.3 / 2014-10-28
 ==================
 
