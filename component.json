@@ -1,6 +1,6 @@
 {
   "name": "retext-live",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Change a node based on a new input",
   "license": "MIT",
   "keywords": [
