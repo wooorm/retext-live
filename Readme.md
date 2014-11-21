@@ -2,7 +2,7 @@
 
 Change a node based on (new) input.
 
-Tries to be smart about things; only inserting new nodes where needed, removing what no exists, updating text, and more.
+Tries to be smart about things; only inserting new nodes where needed, removing what does not exists, updating text, and more.
 
 > Note, the current diff algorithm is pretty proof-of-concept. Errors occur. When they do the tree is completely re-rendered.
 
@@ -26,8 +26,8 @@ $ bower install retext-live
 ## Usage
 
 ```js
-var Retext = require('retext'),
-    live = require('retext-live');
+var Retext = require('retext');
+var live = require('retext-live');
 
 var retext = new Retext().use(live);
 
@@ -46,7 +46,7 @@ retext.parse('Some English words.', function (err, tree) {
 
 ## API
 
-### TextOM.Node#update()
+### [TextOM.Node](https://github.com/wooorm/textom#textomnode-nlcstnode)#update()
 
 Update a node based on the changes between its current value and the new value.
 
