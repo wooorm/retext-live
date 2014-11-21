@@ -25,12 +25,12 @@ var retext;
 retext = new Retext()
     .use(live)
     .use(dom)
-    .use(emoji({
+    .use(emoji, {
         'convert' : 'encode'
-    }))
-    .use(smartypants({
+    })
+    .use(smartypants, {
         'dashes' : 'oldschool'
-    }));
+    });
 
 /**
  * DOM
