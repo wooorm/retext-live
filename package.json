@@ -9,7 +9,7 @@
   ],
   "dependencies": {
     "deep-diff": "^0.3.0",
-    "nlcst-to-textom": "^0.0.1",
+    "nlcst-to-textom": "^0.1.0",
     "retext-visit": "^0.2.2"
   },
   "repository": {
@@ -18,14 +18,14 @@
   },
   "author": "Titus Wormer <tituswormer@gmail.com>",
   "devDependencies": {
-    "browserify": "^6.2.0",
+    "browserify": "^6.0.0",
     "eslint": "^0.9.0",
     "istanbul": "^0.3.0",
-    "jscs": "^1.7.0",
+    "jscs": "^1.0.0",
     "mocha": "^2.0.0",
-    "retext": "^0.3.0-rc.2",
+    "retext": "^0.4.0",
     "retext-dom": "^0.2.3",
-    "retext-emoji": "^0.3.0",
+    "retext-emoji": "^0.4.0",
     "retext-smartypants": "^0.4.0"
   },
   "scripts": {
