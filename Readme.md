@@ -1,4 +1,4 @@
-# retext-live [![Build Status](https://travis-ci.org/wooorm/retext-live.svg?branch=master)](https://travis-ci.org/wooorm/retext-live) [![Coverage Status](https://img.shields.io/coveralls/wooorm/retext-live.svg)](https://coveralls.io/r/wooorm/retext-live?branch=master)
+# retext-live [![Build Status](https://img.shields.io/travis/wooorm/retext-live.svg?style=flat)](https://travis-ci.org/wooorm/retext-live) [![Coverage Status](https://img.shields.io/coveralls/wooorm/retext-live.svg?style=flat)](https://coveralls.io/r/wooorm/retext-live?branch=master)
 
 Change a node based on (new) input.
 
