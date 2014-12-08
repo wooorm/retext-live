@@ -10,9 +10,12 @@ deepDiff = require('deep-diff');
  * Diff.
  */
 
-var diff;
+var diff,
+    slice;
 
 diff = deepDiff.diff;
+
+slice = Array.prototype.slice;
 
 /**
  * Get a tokenizer for a given node.
@@ -93,6 +96,7 @@ function applyNLCST(node, nlcst) {
     var tree,
         changes,
         deletions,
+        nodes,
         index,
         length,
         change;
@@ -160,8 +164,12 @@ function applyNLCST(node, nlcst) {
          * Remove all children of `node`.
          */
 
-        while (node.head) {
-            node.head.remove();
+        nodes = slice.call(node);
+
+        index = -1;
+
+        while (nodes[++index]) {
+            nodes[index].remove();
         }
 
         tree = nlcstToTextOM(node.TextOM, nlcst);
@@ -170,9 +178,7 @@ function applyNLCST(node, nlcst) {
          * Add all children of the new tree.
          */
 
-        while (tree.head) {
-            node.append(tree.head);
-        }
+        node.appendAll(slice.call(tree));
 
         console.log(
             'There seems to be a (serious?) problem in ' +
