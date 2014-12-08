@@ -28,6 +28,7 @@
     "coverage/",
     "example/",
     "node_modules/",
+    "component.json",
     "package.json",
     "test.js"
   ]
