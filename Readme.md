@@ -53,6 +53,16 @@ Update a [`Node`](https://github.com/wooorm/textom#textomnode-nlcstnode) based o
 - `TextOM.Node#update(string)` — Parses the given value and applies changes (if any) to `node`;
 - `TextOM.Node#update(nlcst)` — Applies changes (if any) to `node`.
 
+## Performance
+
+```js
+          TextOM.Node#update() on a section
+  20 op/s » Add and remove a paragraph to/from a section
+
+          TextOM.Node#update() on an article
+   2 op/s » Add and remove a paragraph to/from an article
+```
+
 ## License
 
 MIT © [Titus Wormer](http://wooorm.com)
