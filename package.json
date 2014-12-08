@@ -24,8 +24,8 @@
     "jscs": "^1.0.0",
     "mocha": "^2.0.0",
     "retext": "^0.5.0-rc.1",
-    "retext-dom": "^0.2.3",
-    "retext-emoji": "^0.4.0",
+    "retext-dom": "^0.3.0",
+    "retext-emoji": "^0.5.0",
     "retext-smartypants": "^0.4.0"
   },
   "scripts": {
