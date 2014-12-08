@@ -55,4 +55,4 @@ Update a node based on the changes between its current value and the new value.
 
 ## License
 
-MIT © Titus Wormer
+MIT © [Titus Wormer](http://wooorm.com)
