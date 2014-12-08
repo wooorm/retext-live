@@ -48,10 +48,10 @@ retext.parse('Some English words.', function (err, tree) {
 
 ### [TextOM.Node](https://github.com/wooorm/textom#textomnode-nlcstnode)#update()
 
-Update a node based on the changes between its current value and the new value.
+Update a [`Node`](https://github.com/wooorm/textom#textomnode-nlcstnode) based on the changes between its current value and the new value.
 
-- `TextOM.Node#update(string)` — Parses the given value and applies changes (if any) to the context;
-- `TextOM.Node#update(nlcst)` — Applies changes (if any) to the context;
+- `TextOM.Node#update(string)` — Parses the given value and applies changes (if any) to `node`;
+- `TextOM.Node#update(nlcst)` — Applies changes (if any) to `node`.
 
 ## License
 
