@@ -1,4 +1,19 @@
 
+n.n.n / 2014-12-08
+==================
+
+ * Add improve performance to exception-handled changes
+ * Add benchmark
+ * Add component to `bower.json`
+ * Add component to `.npmignore`
+ * Fix wording in `Readme.md`
+ * Refactor npm script targets in `package.json`
+ * Add link to personal website to copyright in `Readme.md`
+ * Update browserify
+ * Update retext-dom, retext-emoji
+ * Update retext, nlcst-to-textom
+ * Update eslint
+
 0.0.4 / 2014-11-21
 ==================
 
