@@ -1,9 +1,11 @@
 .*
 *.log
 bower_components/
+components/
 coverage/
 example/
 node_modules/
 bower.json
+component.json
 test.js
 History.md
