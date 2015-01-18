@@ -6,7 +6,7 @@ var nlcstToTextOM,
 nlcstToTextOM = require('nlcst-to-textom');
 deepDiff = require('deep-diff');
 
-/**
+/*
  * Diff.
  */
 
@@ -24,7 +24,6 @@ slice = Array.prototype.slice;
  * @param {Node} node
  * @return {Function?}
  */
-
 function getTokenizer(parser, node) {
     var type;
 
@@ -37,6 +36,12 @@ function getTokenizer(parser, node) {
     return null;
 }
 
+/**
+ * Resolve a node with a path
+ *
+ * @param {Node} node
+ * @param {Array.<string>} path
+ */
 function resolve(node, path) {
     var part;
 
@@ -54,6 +59,12 @@ function resolve(node, path) {
     return resolve(node[part], path.slice(1));
 }
 
+/**
+ * Apply an array addition to a node.
+ *
+ * @param {Node} tree
+ * @param {Object} change
+ */
 function applyArrayAddition(tree, change) {
     var addition,
         node;
@@ -69,6 +80,12 @@ function applyArrayAddition(tree, change) {
     }
 }
 
+/**
+ * Apply an edit to a node.
+ *
+ * @param {Node} tree
+ * @param {Object} change
+ */
 function applyEdit(tree, change) {
     var node,
         part,
@@ -80,7 +97,7 @@ function applyEdit(tree, change) {
 
     if (part === 'value') {
         node.fromString(change.rhs);
-    /**
+    /*
      * Should always be `type`.
      */
     } else {
@@ -92,6 +109,12 @@ function applyEdit(tree, change) {
     }
 }
 
+/**
+ * Apply NLCST to a node.
+ *
+ * @param {Node} node
+ * @param {Object} nlcst
+ */
 function applyNLCST(node, nlcst) {
     var tree,
         changes,
@@ -107,7 +130,7 @@ function applyNLCST(node, nlcst) {
         return;
     }
 
-    /**
+    /*
      * All deletions are gathered, and deleted later.
      * Otherwise, the insices shift for the other
      * changes.
@@ -136,7 +159,7 @@ function applyNLCST(node, nlcst) {
             } else if (change.kind === 'E') {
                 applyEdit(node, change);
             } else {
-                /**
+                /*
                  * Should not occur. Here for debugging.
                  */
 
@@ -145,7 +168,7 @@ function applyNLCST(node, nlcst) {
             }
         }
 
-        /**
+        /*
          * Remove all deletions.
          */
 
@@ -155,12 +178,12 @@ function applyNLCST(node, nlcst) {
         while (++index < length) {
             deletions[index].remove();
         }
-    /**
+    /*
      * An exception occurred, but the tree is probably valid.
      * Just force the new content.
      */
     } catch (exception) {
-        /**
+        /*
          * Remove all children of `node`.
          */
 
@@ -174,7 +197,7 @@ function applyNLCST(node, nlcst) {
 
         tree = nlcstToTextOM(node.TextOM, nlcst);
 
-        /**
+        /*
          * Add all children of the new tree.
          */
 
@@ -196,7 +219,6 @@ function applyNLCST(node, nlcst) {
  * @param {string} value
  * @this {Node}
  */
-
 function update(value) {
     var self,
         isNLCST,
@@ -222,7 +244,7 @@ function update(value) {
         );
     }
 
-    /**
+    /*
      * `self` is a text node. Exit early.
      */
 
@@ -265,12 +287,11 @@ function update(value) {
  *
  * @param {Retext} retext
  */
-
 function live(retext) {
     retext.TextOM.Node.prototype.update = update;
 }
 
-/**
+/*
  * Expose `plugin`.
  */
 

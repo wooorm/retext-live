@@ -4,7 +4,7 @@ var live,
     Retext,
     assert;
 
-/**
+/*
  * Dependencies.
  */
 
@@ -12,7 +12,7 @@ live = require('./');
 Retext = require('retext');
 assert = require('assert');
 
-/**
+/*
  * Retext.
  */
 
@@ -24,7 +24,7 @@ retext = new Retext().use(live);
 TextOM = retext.TextOM;
 parser = retext.parser;
 
-/**
+/*
  * Unit tests.
  */
 
