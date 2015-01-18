@@ -74,4 +74,4 @@ Update a [`Node`](https://github.com/wooorm/textom#textomnode-nlcstnode) based o
 
 ## License
 
-MIT © [Titus Wormer](http://wooorm.com)
+[MIT](LICENSE) © [Titus Wormer](http://wooorm.com)
