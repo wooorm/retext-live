@@ -26,6 +26,12 @@ $ component install wooorm/retext-live
 $ bower install retext-live
 ```
 
+[Duo](http://duojs.org/#getting-started):
+
+```javascript
+var live = require('wooorm/retext-live');
+```
+
 ## Usage
 
 ```javascript
