@@ -9,23 +9,26 @@ Tries to be smart about things; only inserting new nodes where needed, removing 
 ## Installation
 
 npm:
-```sh
+
+```bash
 $ npm install retext-live
 ```
 
 Component:
-```sh
+
+```bash
 $ component install wooorm/retext-live
 ```
 
 Bower:
-```sh
+
+```bash
 $ bower install retext-live
 ```
 
 ## Usage
 
-```js
+```javascript
 var Retext = require('retext');
 var live = require('retext-live');
 
@@ -55,7 +58,7 @@ Update a [`Node`](https://github.com/wooorm/textom#textomnode-nlcstnode) based o
 
 ## Performance
 
-```js
+```text
           TextOM.Node#update() on a section
   20 op/s » Add and remove a paragraph to/from a section
 
