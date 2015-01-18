@@ -30,7 +30,7 @@
     "node_modules/",
     "component.json",
     "package.json",
-    "benchmark.js"
+    "benchmark.js",
     "test.js"
   ]
 }
