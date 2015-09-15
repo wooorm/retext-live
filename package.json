@@ -1,49 +1,5 @@
 {
   "name": "retext-live",
-  "version": "0.0.6",
-  "description": "Change a node based on a new input",
-  "license": "MIT",
-  "keywords": [
-    "retext",
-    "live"
-  ],
-  "dependencies": {
-    "deep-diff": "^0.3.0",
-    "nlcst-to-textom": "^0.2.0",
-    "retext-visit": "^0.2.2"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/wooorm/retext-live.git"
-  },
-  "author": "Titus Wormer <tituswormer@gmail.com>",
-  "devDependencies": {
-    "browserify": "^8.0.0",
-    "eslint": "^0.12.0",
-    "istanbul": "^0.3.0",
-    "jscs": "^1.0.0",
-    "jscs-jsdoc": "^0.4.0",
-    "matcha": "^0.6.0",
-    "mocha": "^2.0.0",
-    "retext": "^0.5.0",
-    "retext-dom": "^0.3.0",
-    "retext-emoji": "^0.5.0",
-    "retext-smartypants": "^0.4.0"
-  },
-  "scripts": {
-    "test-api": "_mocha --check-leaks test.js",
-    "test-coveralls": "istanbul cover _mocha --report lcovonly -- --check-leaks test.js",
-    "test-coverage": "istanbul cover _mocha -- --check-leaks test.js",
-    "test-travis": "npm run test-coveralls",
-    "test": "npm run test-api",
-    "lint-api": "eslint index.js",
-    "lint-benchmark": "eslint --global bench,before,suite,set benchmark.js",
-    "lint-test": "eslint --env mocha test.js",
-    "lint-style": "jscs --reporter inline index.js benchmark.js test.js",
-    "lint": "npm run lint-api && npm run lint-benchmark && npm run lint-test && npm run lint-style",
-    "make": "npm run lint && npm run test-coverage",
-    "benchmark": "matcha benchmark.js",
-    "build-example": "browserify example/index.js -o example/browser.js",
-    "build": "npm run build-example"
-  }
+  "version": "0.1.0",
+  "description": "Deprecated"
 }
